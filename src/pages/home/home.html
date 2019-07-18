@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-navbar color="secondary">
+    <ion-title class="centertitle">Welcome</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+    <ion-grid>
+
+        <ion-row>
+        </ion-row>
+    </ion-grid>
+
+  <ion-list>
+
+    <ion-item>
+      <!--  <ion-label stacked>Username</ion-label> -->
+        <ion-input type="text" placeholder="Mail" [(ngModel)]="user.email"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input type="password" placeholder="Password" [(ngModel)]="user.password"></ion-input>
+      </ion-item>
+    </ion-list>
+   
+      <ion-row>
+          <ion-col>
+    <button ion-button outline block slot="danger"(click)="login(user)">Login</button>
+    <button ion-button block color="secondary" (click)="register()">Register</button>
+        </ion-col>
+      </ion-row>
+      
+      <ion-item>
+          <p>Forgot Password ?</p>
+          <a><button ion-button clear (click)="otraregistro()">Get password</button></a>
+        </ion-item>
+
+        <ion-list inset>
+          <ion-item *ngFor="let user of users">
+            <h2>{{user.name}}</h2>
+            <p>{{user.email}}</p>
+          </ion-item>
+        </ion-list>
+
+</ion-content>

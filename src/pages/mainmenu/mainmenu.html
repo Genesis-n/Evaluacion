@@ -1,0 +1,96 @@
+<!--
+  Generated template for the MainmenuPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-header>
+    <ion-toolbar>
+
+        <ion-navbar color="secondary">
+            <ion-buttons end>
+                <button ion-button icon-only start (click)="menuToggle()">
+        <ion-icon  name="menu"></ion-icon>
+      </button>
+
+            </ion-buttons>
+
+            <ion-title>Categorias</ion-title>
+        </ion-navbar>
+    </ion-toolbar>
+</ion-header>
+
+
+<ion-content padding>         
+
+<!-- List of Text Items -->
+<ion-list>
+    <ion-item>
+      <ion-label>Juan Gomez</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Maria Guzman</ion-label>
+      <button ion-button (click)="contac()">Footer Button</button>
+    </ion-item>
+    <ion-item>
+      <ion-label>Reyna Maria Novas   </ion-label>
+        <button ion-button (click)="doIt()">Footer Button</button>
+   
+
+    </ion-item>
+    <ion-item>
+      <ion-label>Valentin de la cruz</ion-label>
+      <button ion-button (click)="conrac2()">Footer Button</button>
+    </ion-item>
+    <ion-item>
+      <ion-label>Reyna Novas</ion-label>
+    </ion-item>
+  </ion-list>
+  
+  <!-- List of Input Items -->
+  <ion-list>
+    <ion-item>
+      <ion-label>Neliza aquino</ion-label>
+      <button ion-button (click)="contac3()">Footer Button</button>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Marta Perez</ion-label>
+      <ion-toggle slot="end"></ion-toggle>
+    </ion-item>
+    <ion-item>
+      <ion-label>Ronny Adames</ion-label>
+      <ion-radio slot="end"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>Sther lacen</ion-label>
+      <ion-checkbox slot="start"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+  
+  <!-- List of Sliding Items -->
+  <ion-list>
+    <ion-item-sliding>
+      <ion-item>
+        <ion-label>Item</ion-label>
+      </ion-item>
+      <ion-item-options side="end">
+        <ion-item-option (click)="unread(item)">Unread</ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+  
+    <ion-item-sliding>
+      <ion-item>
+        <ion-label>Item</ion-label>
+      </ion-item>
+      <ion-item-options side="end">
+        <ion-item-option (click)="unread(item)">Unread</ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+
+                </ion-row>
+    </ion-grid>
+            
+</ion-content>

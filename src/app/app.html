@@ -1,0 +1,54 @@
+
+    <ion-menu [content]="content" [swipeEnabled]="false">
+        
+        <ion-content>
+
+            <ion-list>
+      
+        <ion-header>
+          <ion-toolbar color="secondary">
+            <ion-title>Sugerencias</ion-title>
+          </ion-toolbar>
+        </ion-header>
+
+              <button ion-item>
+                  <ion-icon name="clipboard" item-start></ion-icon>
+                  Guia para vender
+                </button>
+
+
+                <button ion-item>
+                  <ion-icon name="paper" item-start (click)="sais()"></ion-icon>
+                  Lista de Recomendaciones
+                </button>
+
+                <button ion-item>
+                  <ion-icon name="paper" item-start (click)="sais()"></ion-icon>
+                  Confirmar el correo
+                </button>
+
+                <button ion-item>
+                  <ion-icon name="paper" item-start (click)="sais()"></ion-icon>
+                  Revisar informacion
+                </button>
+
+                <button ion-item>
+                  <ion-icon name="paper" item-start (click)="sais()"></ion-icon>
+                  Confirmar su compra
+                </button>
+
+
+                      <button ion-item>
+                          <ion-icon name="paper" item-start (click)="sais()"></ion-icon>
+                          Ubicacion exacta
+                        </button>
+                      <ion-item  (click)="logout()">Salir</ion-item>
+
+                      
+                    </ion-list>
+        
+                  </ion-content>
+      </ion-menu>
+            
+
+<ion-nav [root]="rootPage" #content></ion-nav>
